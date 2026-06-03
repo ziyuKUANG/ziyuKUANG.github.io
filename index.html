@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ziyu72 · 个人站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f7;
+            color: #1c1c1e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            padding: 2rem 1.8rem;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a4e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .tagline {
+            color: #6c6c70;
+            margin-top: 0.3rem;
+        }
+        .nav {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1.5rem 0 2rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #2c2c2e;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+        }
+        .nav a:hover {
+            border-bottom-color: #0066cc;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-left: 4px solid #0066cc;
+            padding-left: 0.8rem;
+        }
+        .resume-card, .life-card {
+            background: #f9f9fb;
+            border-radius: 20px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .job h3, .edu h3 {
+            font-weight: 600;
+        }
+        .date {
+            color: #6c6c70;
+            font-size: 0.85rem;
+            margin-bottom: 0.3rem;
+        }
+        .photo-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .photo-placeholder {
+            background: #eef2ff;
+            border-radius: 16px;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+            font-size: 0.8rem;
+        }
+        .timeline {
+            border-left: 2px solid #ddd;
+            margin-left: 0.5rem;
+            padding-left: 1.2rem;
+        }
+        .timeline-item {
+            margin-bottom: 1rem;
+        }
+        .timeline-year {
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .essay-list {
+            list-style: none;
+        }
+        .essay-list li {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ececec;
+            padding-bottom: 0.8rem;
+        }
+        .essay-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0f172a;
+            text-decoration: none;
+        }
+        .essay-meta {
+            color: #8e8e93;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        .footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #8e8e93;
+            border-top: 1px solid #efefef;
+            padding-top: 1.2rem;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 1.2rem; }
+            .section-title { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="site-header">
+        <h1>ziyu72</h1>
+        <div class="tagline">记录 · 思考 · 生长</div>
+        <div class="nav">
+            <a href="#resume">📄 简历</a>
+            <a href="#life">📷 生活</a>
+            <a href="#essays">✍️ 随笔</a>
+        </div>
+    </div>
+
+    <div id="resume" class="section">
+        <div class="section-title">📄 简历</div>
+        <div class="resume-card">
+            <h3>全栈 / 独立开发者</h3>
+            <div class="date">自由职业 · 2023 – 至今</div>
+            <p>帮助小型团队搭建前端应用，热爱简洁高效的设计。</p>
+        </div>
+        <div class="resume-card">
+            <h3>计算机科学与技术 学士</h3>
+            <div class="date">某大学 · 2019 – 2023</div>
+            <p>主修Web开发与人机交互。</p>
+        </div>
+    </div>
+
+    <div id="life" class="section">
+        <div class="section-title">📷 生活</div>
+        <div class="photo-wall">
+            <div class="photo-placeholder">📸 山间徒步</div>
+            <div class="photo-placeholder">☕ 咖啡馆午后</div>
+            <div class="photo-placeholder">🎧 黑胶时刻</div>
+            <div class="photo-placeholder">🌅 海边日落</div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item"><span class="timeline-year">2025</span> —— 开始学陶艺</div>
+            <div class="timeline-item"><span class="timeline-year">2024</span> —— 完成第一个半马</div>
+            <div class="timeline-item"><span class="timeline-year">2023</span> —— 毕业旅行·云南</div>
+        </div>
+    </div>
+
+    <div id="essays" class="section">
+        <div class="section-title">✍️ 随笔</div>
+        <ul class="essay-list">
+            <li>
+                <a href="#" class="essay-title">为什么重新开始写个人网站</a>
+                <span class="essay-meta">2025-06-01</span>
+                <p style="font-size:0.9rem; margin-top:4px;">给自己留一片安静表达的地方。</p>
+            </li>
+            <li>
+                <a href="#" class="essay-title">数字花园与慢慢生长</a>
+                <span class="essay-meta">2025-05-20</span>
+                <p style="font-size:0.9rem; margin-top:4px;">不追求流量，只记录真实的思考过程。</p>
+            </li>
+        </ul>
+        <div style="margin-top: 0.5rem;"><a href="#">→ 查看全部</a></div>
+    </div>
+
+    <div class="footer">
+        © 2025 ziyu72 · 手工搭建于 GitHub Pages · <a href="mailto:ziyu72@example.com">ziyu72@example.com</a>
+    </div>
+</div>
+</body>
+</html>

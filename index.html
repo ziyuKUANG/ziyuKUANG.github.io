@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ziyu72 · 个人站</title>
+    <title>ziyu KUANG · 个人</title>
     <style>
         * {
             margin: 0;
@@ -81,9 +81,39 @@
         }
         .photo-wall {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 1rem;
-            margin: 1rem 0;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .photo-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .photo-card:hover {
+            transform: translateY(-4px);
+        }
+        .photo-card img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+        .photo-caption {
+            padding: 0.6rem 0.5rem 0.8rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: #4b5563;
+            background: #fafaf9;
+            border-top: 1px solid #f0f0f0;
+        }
+        @media (max-width: 640px) {
+            .photo-wall {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
         }
         .photo-placeholder {
             background: #eef2ff;
@@ -191,15 +221,27 @@
     <div id="life" class="section">
         <div class="section-title">📷 生活</div>
         <div class="photo-wall">
-            <img src="考试周.jpg"> exam </div>
-            <img src="迪士尼.jpg"> Disney </div>
-            <img src="日落.jpg"> sunset </div>
-            <img src="南开毕业.jpg"> NKU grad </div>
+            <div class="photo-card">
+                <img src="迪士尼.jpg" alt="迪士尼">
+                <div class="photo-caption"> Disney </div>
+            </div>
+            <div class="photo-card">
+                <img src="考试周.jpg" alt="考试周">
+                <div class="photo-caption"> exam </div>
+            </div>
+            <div class="photo-card">
+                <img src="日落.jpg" alt="日落">
+                <div class="photo-caption"> sunset </div>
+            </div>
+            <div class="photo-card">
+                <img src="南开毕业.jpg" alt="南开毕业">
+                <div class="photo-caption"> NKU grad </div>
+            </div>
         </div>
         <div class="timeline">
-            <div class="timeline-item"><span class="timeline-year">2025</span> —— 开始学陶艺</div>
-            <div class="timeline-item"><span class="timeline-year">2024</span> —— 完成第一个半马</div>
-            <div class="timeline-item"><span class="timeline-year">2023</span> —— 毕业旅行·云南</div>
+            <div class="timeline-item"><span class="timeline-year">2026</span> —— 研一</div>
+            <div class="timeline-item"><span class="timeline-year">2025</span> —— 入学港中深</div>
+            <div class="timeline-item"><span class="timeline-year">2024</span> —— 南开毕业</div>
         </div>
     </div>
 
